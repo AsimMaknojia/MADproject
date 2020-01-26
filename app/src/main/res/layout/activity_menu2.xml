@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu2">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/r1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:onClick="fun"/>
+
+    <LinearLayout
+        android:layout_below="@id/image"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken Roll"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS: 100"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_marginLeft="40dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="add to cart"
+        android:background="@drawable/button_round"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"/>
+
+</RelativeLayout>
